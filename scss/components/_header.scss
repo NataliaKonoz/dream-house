@@ -1,0 +1,20 @@
+.header {
+  &__burger-icon {
+    fill: var(--color-brand-white);
+    border-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      fill: var(--color-brand-orange);
+      border-color: transparent;
+    }
+  }
+
+  &__phone-number {
+    color: var(--color-brand-white);
+
+    &:hover {
+      color: var(--color-brand-orange);
+    }
+  }
+}
