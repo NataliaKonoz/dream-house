@@ -14,9 +14,9 @@
     <title>Dream house</title>
   </head>
   <body>
-    <header class="d-flex justify-content-between align-items-center">
+    <header class="d-flex justify-content-between align-items-center header">
       <!-- Ліва частина -->
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center header__container-menu">
         <a href="#" class="navbar-brand me-3">
           <img
             src="./images/logo.png"
@@ -31,15 +31,17 @@
           </svg>
         </button>
         <a href="tel:+380000000000" class="header__phone-number"
-          >+38 (000) 000-00-00</a
-        >
+          >+38 (000) 000-00-00
+        </a>
       </div>
 
       <!-- Права частина -->
-      <div class="d-flex align-items-center">
-        <button class="btn btn-primary me-2">Request for a Call</button>
-        <button class="btn btn-outline-secondary">
-          <svg style="height: 24px; width: 24px">
+      <div class="d-flex align-items-center header__container-request-call">
+        <button class="btn btn-primary me-2 header__request-call">
+          request for a call
+        </button>
+        <button class="header__phone-icon">
+          <svg style="height: 16px; width: 16px">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
         </button>
@@ -54,4 +56,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script src="./js/animation.js"></script>
 </html>

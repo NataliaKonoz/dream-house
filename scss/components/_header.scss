@@ -2,6 +2,7 @@
   &__burger-icon {
     fill: var(--color-brand-white);
     border-color: transparent;
+    transition: fill 0.3s ease;
 
     &:hover {
       background-color: transparent;
@@ -12,9 +13,83 @@
 
   &__phone-number {
     color: var(--color-brand-white);
+    font-family: 'Roboto';
+    transition: color 0.3s ease;
+    font-size: 14px;
 
     &:hover {
       color: var(--color-brand-orange);
     }
+  }
+
+  &__request-call {
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover {
+      color: var(--color-brand-orange);
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  &__phone-icon {
+    fill: var(--color-brand-white);
+    transition: fill 0.3s ease;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.15) 70%,
+      transparent 51%
+    );
+    animation: fillFromCenter 0.8s ease-out forwards;
+
+    &:hover {
+      fill: var(--color-brand-orange);
+    }
+
+    &.animate {
+      &::before {
+        width: 60px;
+        height: 60px;
+      }
+
+      &::after {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &::before {
+      content: '';
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      width: 1px;
+      height: 1px;
+    }
+    &::after {
+      content: '';
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      width: 1px;
+      height: 1px;
+    }
+  }
+}
+
+@keyframes fillFromCenter {
+  0% {
+    background-size: 0% 0%; /* Початковий стан: фон відсутній */
+    background-position: center; /* Центр */
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-size: 100% 100%; /* Кінець анімації: фон заповнює весь елемент */
+    background-position: center; /* Центр */
+    background-repeat: no-repeat;
   }
 }

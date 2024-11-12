@@ -1,0 +1,46 @@
+.header {
+  padding-right: 210px;
+
+  &__container-menu {
+    flex-grow: 1;
+  }
+
+  &__container-request-call {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  &__phone-icon {
+    position: relative;
+    padding: 14px;
+
+    &.animate {
+      &::before {
+        top: -8px;
+        right: -8px;
+      }
+
+      &::after {
+        top: -18px;
+        right: -18px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 20px;
+      right: 20px;
+      transition: width 1s ease, height 1s ease, top 1s ease, right 1s ease;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      top: 20px;
+      right: 20px;
+      transition: width 1s ease, height 1s ease, top 1s ease, right 1s ease;
+    }
+  }
+}
