@@ -1,15 +1,23 @@
 .header {
-  &::after {
-    content: '';
-    width: 77%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.25);
+  &__logo {
+    height: 40px;
+    @media screen and (max-width: $--bp-mobile) {
+      height: 34px;
+    }
   }
 
   &__burger-icon {
     fill: var(--color-brand-white);
     border-color: transparent;
     transition: fill 0.3s ease, transform 0.2s ease;
+
+    @media screen and (max-width: $--bp-tablet) {
+      width: 22px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 20px;
+    }
 
     &:hover {
       background-color: transparent;
@@ -78,11 +86,31 @@
       &::before {
         width: 60px;
         height: 60px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          width: 44px;
+          height: 44px;
+        }
       }
 
       &::after {
         width: 80px;
         height: 80px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          width: 58px;
+          height: 58px;
+        }
       }
     }
 
@@ -101,12 +129,23 @@
       width: 1px;
       height: 1px;
     }
+
     &::after {
       content: '';
       border-radius: 50%;
       border: 2px solid rgba(255, 255, 255, 0.1);
       width: 1px;
       height: 1px;
+    }
+  }
+
+  &__vertical-decorative-line {
+    width: 91%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+
+    @media screen and (max-width: $--bp-tablet) {
+      width: 110%;
     }
   }
 }

@@ -3,6 +3,15 @@ body {
   padding-left: 40px;
   position: relative;
 
+  @media screen and (max-width: $--bp-tablet) {
+    padding-top: 20px;
+    padding-left: 28px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    padding-left: 16px;
+  }
+
   &::after {
     content: '';
     position: absolute;

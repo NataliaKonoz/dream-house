@@ -14,40 +14,44 @@
     <title>Dream house</title>
   </head>
   <body>
-    <header class="d-flex justify-content-between align-items-center header">
-      <!-- Ліва частина -->
-      <div class="d-flex align-items-center header__container-menu">
-        <a href="#" class="navbar-brand me-3">
-          <img
-            src="./images/logo.png"
-            alt="logo"
-            class="img-fluid"
-            style="height: 40px"
-          />
-        </a>
-        <button class="btn-outline-primary header__burger-icon">
-          <svg style="height: 24px; width: 24px">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <a
-          href="tel:+380000000000"
-          class="d-none d-md-block header__phone-number"
-          >+38 (000) 000-00-00
-        </a>
-      </div>
+    <header class="header">
+      <div class="d-flex header__container">
+        <!-- Ліва частина -->
+        <div class="d-flex align-items-center header__container-menu">
+          <a href="#" class="navbar-brand me-3">
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              class="img-fluid header__logo"
+            />
+          </a>
+          <button class="btn-outline-primary header__burger-icon">
+            <svg style="height: 24px; width: 24px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <a
+            href="tel:+380000000000"
+            class="d-none d-md-block header__phone-number"
+            >+38 (000) 000-00-00
+          </a>
+        </div>
 
-      <!-- Права частина -->
-      <div class="d-flex align-items-center header__container-request-call">
-        <button class="d-none d-sm-block btn-primary me-2 header__request-call">
-          request for a call
-        </button>
-        <button class="header__phone-icon">
-          <svg style="height: 16px; width: 16px">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </button>
+        <!-- Права частина -->
+        <div class="d-flex align-items-center header__container-request-call">
+          <button
+            class="d-none d-sm-block btn-primary me-2 header__request-call"
+          >
+            request for a call
+          </button>
+          <button class="header__phone-icon">
+            <svg style="height: 16px; width: 16px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </button>
+        </div>
       </div>
+      <div class="header__vertical-decorative-line"></div>
     </header>
 
     <main></main>

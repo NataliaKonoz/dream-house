@@ -1,6 +1,8 @@
 .header {
   position: relative;
   padding-right: 70px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: $--bp-tablet) {
     padding-right: 44px;
@@ -10,10 +12,8 @@
     padding-right: 32px;
   }
 
-  &::after {
-    position: absolute;
-    top: 60px;
-    right: 240px;
+  &__container {
+    padding-bottom: 14px;
   }
 
   &__container-menu {
@@ -39,15 +39,38 @@
     position: relative;
     padding: 14px;
 
+    @media screen and (max-width: $--bp-tablet) {
+      padding: 11px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      padding: 8px;
+    }
+
     &.animate {
       &::before {
         top: -8px;
         right: -8px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -6px;
+          right: -6px;
+        }
       }
 
       &::after {
         top: -18px;
         right: -18px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -16px;
+          right: -16px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          top: -13px;
+          right: -13px;
+        }
       }
     }
 
@@ -71,7 +94,32 @@
       &::before {
         top: 2px;
         right: 2px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -1px;
+          right: -1px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          top: -4px;
+          right: -4px;
+        }
       }
+    }
+  }
+
+  &__vertical-decorative-line {
+    margin-right: 60px;
+    align-self: end;
+
+    @media screen and (max-width: $--bp-tablet) {
+      position: absolute;
+      top: 60px;
+      right: -60px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      top: 52px;
     }
   }
 }
