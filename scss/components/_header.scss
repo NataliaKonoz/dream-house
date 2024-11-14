@@ -1,4 +1,11 @@
 .header {
+  &::after {
+    content: '';
+    width: 92%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
   &__burger-icon {
     fill: var(--color-brand-white);
     border-color: transparent;
@@ -29,6 +36,7 @@
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 14px;
+    color: var(--color-brand-white);
 
     &:hover {
       color: var(--color-brand-orange);
@@ -50,6 +58,12 @@
 
     &:hover {
       fill: var(--color-brand-orange);
+      background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.15) 70%,
+        transparent 51%
+      );
+      animation: fillToCenter 0.5s ease-out forwards;
     }
 
     &.animate {
@@ -61,6 +75,14 @@
       &::after {
         width: 80px;
         height: 80px;
+      }
+    }
+
+    &.hover {
+      &::before {
+        width: 40px;
+        height: 40px;
+        border-color: rgba(255, 172, 48, 0.3);
       }
     }
 
@@ -83,13 +105,26 @@
 
 @keyframes fillFromCenter {
   0% {
-    background-size: 0% 0%; /* Початковий стан: фон відсутній */
-    background-position: center; /* Центр */
+    background-size: 0% 0%;
+    background-position: center;
     background-repeat: no-repeat;
   }
   100% {
-    background-size: 100% 100%; /* Кінець анімації: фон заповнює весь елемент */
-    background-position: center; /* Центр */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes fillToCenter {
+  0% {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-size: 0% 0%;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }

@@ -1,4 +1,14 @@
+const phoneIcon = document.querySelector('.header__phone-icon');
 document.addEventListener('DOMContentLoaded', () => {
-  const phone_icon = document.querySelector('.header__phone-icon');
-  phone_icon.classList.add('animate');
+  phoneIcon.classList.add('animate');
+});
+
+phoneIcon.addEventListener('mouseenter', () => {
+  phoneIcon.classList.add('hover');
+  phoneIcon.classList.remove('animate');
+});
+
+phoneIcon.addEventListener('mouseleave', () => {
+  phoneIcon.classList.remove('hover');
+  phoneIcon.classList.add('animate');
 });

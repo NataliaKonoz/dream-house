@@ -1,8 +1,20 @@
 .header {
-  padding-right: 210px;
+  position: relative;
+  padding-right: 170px;
+
+  &::after {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+  }
 
   &__container-menu {
     flex-grow: 1;
+    gap: 24px;
+  }
+
+  &__phone-number {
+    padding-left: 52px;
   }
 
   &__container-request-call {
@@ -41,6 +53,13 @@
       top: 20px;
       right: 20px;
       transition: width 1s ease, height 1s ease, top 1s ease, right 1s ease;
+    }
+
+    &.hover {
+      &::before {
+        top: 2px;
+        right: 2px;
+      }
     }
   }
 }
