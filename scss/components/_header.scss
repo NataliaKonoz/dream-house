@@ -1,7 +1,7 @@
 .header {
   &::after {
     content: '';
-    width: 92%;
+    width: 77%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.25);
   }
@@ -9,23 +9,25 @@
   &__burger-icon {
     fill: var(--color-brand-white);
     border-color: transparent;
-    transition: fill 0.3s ease;
+    transition: fill 0.3s ease, transform 0.2s ease;
 
     &:hover {
       background-color: transparent;
       fill: var(--color-brand-orange);
       border-color: transparent;
+      transform: scale(1.05);
     }
   }
 
   &__phone-number {
     color: var(--color-brand-white);
     font-family: 'Roboto';
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
     font-size: 14px;
 
     &:hover {
       color: var(--color-brand-orange);
+      transform: scale(1.05);
     }
   }
 
@@ -37,11 +39,17 @@
     font-weight: 600;
     font-size: 14px;
     color: var(--color-brand-white);
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    @media screen and (max-width: $--bp-tablet) {
+      font-size: 12px;
+    }
 
     &:hover {
       color: var(--color-brand-orange);
       background-color: transparent;
       border-color: transparent;
+      transform: scale(1.05);
     }
   }
 

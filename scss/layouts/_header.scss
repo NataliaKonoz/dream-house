@@ -1,16 +1,28 @@
 .header {
   position: relative;
-  padding-right: 170px;
+  padding-right: 70px;
+
+  @media screen and (max-width: $--bp-tablet) {
+    padding-right: 44px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    padding-right: 32px;
+  }
 
   &::after {
     position: absolute;
-    top: 70px;
-    right: 100px;
+    top: 60px;
+    right: 240px;
   }
 
   &__container-menu {
     flex-grow: 1;
     gap: 24px;
+  }
+
+  &__burger-icon {
+    padding-bottom: 4px;
   }
 
   &__phone-number {
