@@ -1,0 +1,27 @@
+.side-panel {
+  position: fixed;
+  margin-left: 11px;
+  top: 116px;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (max-width: $--bp-tablet) {
+    display: none;
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+
+  &__vertical-decorative-line {
+    margin: 50px auto;
+  }
+
+  &__container-icon {
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+}

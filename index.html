@@ -25,7 +25,15 @@
               class="img-fluid header__logo"
             />
           </a>
-          <button class="btn-outline-primary header__burger-icon">
+          <button
+            class="navbar-toggler btn-outline-primary header__burger-icon"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <svg style="height: 24px; width: 24px">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -41,6 +49,7 @@
         <div class="d-flex align-items-center header__container-request-call">
           <button
             class="d-none d-sm-block btn-primary me-2 header__request-call"
+            type="button"
           >
             request for a call
           </button>
@@ -51,10 +60,84 @@
           </button>
         </div>
       </div>
-      <div class="header__vertical-decorative-line"></div>
+      <div class="header__horizontal-decorative-line"></div>
+      <nav class="navbar-expand-* bg-light container-fluid">
+        <div class="collapse" id="navbarNav">
+          <ul class="navbar-nav flex-row">
+            <li class="">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-
-    <main></main>
+    <main>
+      <div class="side-panel">
+        <p class="side-panel__text">apartment renovation</p>
+        <div class="side-panel__vertical-decorative-line"></div>
+        <div class="side-panel__container-icon">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="side-panel__icon"
+          >
+            <svg style="height: 16px; width: 16px">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="side-panel__icon"
+          >
+            <svg style="height: 16px; width: 16px">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a
+            href="https://telegram.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Telegram"
+            class="side-panel__icon"
+          >
+            <svg style="height: 16px; width: 16px">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            class="side-panel__icon"
+          >
+            <svg style="height: 16px; width: 16px">
+              <use href="./images/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
   <script

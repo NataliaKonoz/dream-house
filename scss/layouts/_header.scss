@@ -19,6 +19,14 @@
   &__container-menu {
     flex-grow: 1;
     gap: 24px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      gap: 16px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      gap: 8px;
+    }
   }
 
   &__burger-icon {
@@ -108,7 +116,7 @@
     }
   }
 
-  &__vertical-decorative-line {
+  &__horizontal-decorative-line {
     margin-right: 60px;
     align-self: end;
 
