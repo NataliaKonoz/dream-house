@@ -1,0 +1,15 @@
+.navbar {
+  &__item {
+    text-transform: uppercase;
+    color: var(--color-brand-white);
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 24px;
+    max-width: 158px;
+    text-align: center;
+
+    &--disabled {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
