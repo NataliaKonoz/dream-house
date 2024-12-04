@@ -1,5 +1,66 @@
 .navbar {
+  &__container-contacts {
+    padding: 28px 32px;
+    margin-left: 64px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      margin-left: 0;
+      position: absolute;
+      left: -28px;
+    }
+  }
+
   &__list-items {
     justify-content: space-around;
+    align-items: center;
+    padding-top: 170px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 157px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+      display: block;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 1000px) {
+      padding: 16px 0;
+    }
+  }
+
+  &__link {
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+    }
+  }
+
+  &__container-title-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    padding: 0 24px;
+  }
+
+  &__address-list-items {
+    margin-bottom: 16px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__address-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__address-text {
+    padding-left: 12px;
   }
 }

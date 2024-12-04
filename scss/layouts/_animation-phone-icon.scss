@@ -1,0 +1,100 @@
+.header {
+  &__phone-icon {
+    position: relative;
+    padding: 14px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      padding: 11px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      padding: 8px;
+    }
+
+    &.animate {
+      &::before {
+        top: -8px;
+        right: -8px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -6px;
+          right: -6px;
+        }
+      }
+
+      &::after {
+        top: -18px;
+        right: -18px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -16px;
+          right: -16px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          top: -13px;
+          right: -13px;
+        }
+      }
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 20px;
+      right: 20px;
+      transition: width 1s ease, height 1s ease, top 1s ease, right 1s ease;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      top: 20px;
+      right: 20px;
+      transition: width 1s ease, height 1s ease, top 1s ease, right 1s ease;
+    }
+
+    &.hover {
+      &::before {
+        top: 2px;
+        right: 2px;
+
+        @media screen and (max-width: $--bp-tablet) {
+          top: -1px;
+          right: -1px;
+        }
+
+        @media screen and (max-width: $--bp-mobile) {
+          top: -4px;
+          right: -4px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fillFromCenter {
+  0% {
+    background-size: 0% 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes fillToCenter {
+  0% {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-size: 0% 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

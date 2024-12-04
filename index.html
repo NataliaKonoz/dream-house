@@ -65,22 +65,27 @@
         <div class="collapse" id="navbarNav">
           <ul class="navbar-nav flex-row navbar__list-items">
             <li class="navbar__item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active navbar__link"
+                aria-current="page"
+                href="#"
                 >styles of rennovation
               </a>
             </li>
             <li class="navbar__item">
-              <a class="nav-link" href="#">costs</a>
+              <a class="nav-link navbar__link" href="#">costs</a>
             </li>
             <li class="navbar__item">
-              <a class="nav-link" href="#">5 steps to dream house</a>
+              <a class="nav-link navbar__link" href="#"
+                >5 steps to dream house</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="nav-link" href="#">additional services</a>
+              <a class="nav-link navbar__link" href="#">additional services</a>
             </li>
             <li class="navbar__item navbar__item--disabled">
               <a
-                class="nav-link disabled"
+                class="nav-link disabled navbar__link"
                 href="#"
                 tabindex="-1"
                 aria-disabled="true"
@@ -88,6 +93,61 @@
               </a>
             </li>
           </ul>
+          <div class="navbar__container-contacts">
+            <div class="navbar__container-title-contacts">
+              <a href="#" class="navbar-brand me-3">
+                <img
+                  src="./images/logo-black.png"
+                  alt="logo"
+                  class="img-fluid navbar__logo"
+                />
+              </a>
+              <h2 class="navbar__title">turnkey construction of houses</h2>
+              <div class="navbar__horizontal-decorative-line"></div>
+              <p class="navbar__decorative-arrow">></p>
+            </div>
+            <address
+              class="d-flex flex-wrap justify-content-between navbar__address-list-items"
+            >
+              <div>
+                <a
+                  class="navbar__address-item"
+                  href="https://maps.app.goo.gl/j9hjQ8wcYf2vSrDHA"
+                >
+                  <svg class="navbar__icon">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  <p class="navbar__address-text">
+                    Kiev, st. Knyazhiy Zaton 2/30
+                  </p>
+                </a>
+              </div>
+              <div class="navbar__address-item">
+                <svg class="navbar__icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+                <p class="navbar__address-text">
+                  Mon-Fri: 9:00 - 19:00, Sat: 10:00 - 17:00
+                </p>
+              </div>
+              <div>
+                <a class="navbar__address-item" href="mailto:info@intol.net">
+                  <svg class="navbar__icon">
+                    <use href="./images/icons.svg#icon-mail_outline"></use>
+                  </svg>
+                  <p class="navbar__address-text">info@intol.net</p>
+                </a>
+              </div>
+              <div>
+                <a class="navbar__address-item" href="tel:+380000000000">
+                  <svg class="navbar__icon">
+                    <use href="./images/icons.svg#icon-empty-phone"></use>
+                  </svg>
+                  <p class="navbar__address-text">+38 (000) 000 00 00</p>
+                </a>
+              </div>
+            </address>
+          </div>
         </div>
       </nav>
     </header>
