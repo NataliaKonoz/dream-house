@@ -1,0 +1,59 @@
+.hero-section {
+  &__container-title {
+    padding-left: 170px;
+    position: relative;
+
+    @media screen and (max-width: $--bp-tablet) {
+      padding-left: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__decor-line {
+    position: absolute;
+
+    &--top {
+      top: 64px;
+      left: 234px;
+
+      @media screen and (max-width: $--bp-tablet) {
+        left: 62px;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        top: 40px;
+        left: 36px;
+      }
+    }
+
+    &--bottom {
+      bottom: -92px;
+      left: 528px;
+
+      @media screen and (max-width: $--bp-tablet) {
+        left: 364px;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        bottom: -66px;
+        left: 248px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    &--first-part {
+      padding-top: 156px;
+
+      @media screen and (max-width: $--bp-mobile) {
+        padding-top: 106px;
+      }
+    }
+
+    &--second-part {
+      padding-left: 113px;
+    }
+  }
+}
